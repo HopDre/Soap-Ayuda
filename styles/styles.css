@@ -515,4 +515,14 @@ form textarea {
     width: 90%;
     margin: 20px 0;
   }
+  .lista-precios{
+    display: flex;
+    flex-direction: column;
+  }
+  .lista-precios .left{
+    width: 90%;
+  }
+  .lista-precios .right{
+    width: 90%;
+  }
 }
