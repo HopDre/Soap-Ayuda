@@ -13,6 +13,8 @@
 }
 .header .head img {
   width: 20%;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
 .head {
   position: absolute;
@@ -102,6 +104,8 @@
 }
 .seccion-dos-titulo img {
   width: 150px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
 .seccion-dos-titulo {
   display: flex;
@@ -352,10 +356,10 @@ form textarea {
     margin: 10px;
   }
   .head ul li a {
-    font-size: .4em;
+    font-size: .3em;
   }
   .head ul li a:hover {
-    font-size: .43em;
+    font-size: .33em;
   }
   .texto-uno h2 {
     border: 5px solid yellow;
