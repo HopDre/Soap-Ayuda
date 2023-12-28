@@ -27,7 +27,7 @@
 }
 .head ul {
   display: flex;
-  margin-right: 20px;
+  margin-right: 10px;
   list-style-type: none;
 }
 .head ul li {
@@ -353,7 +353,7 @@ form textarea {
     margin-right: 0;
   }
   .head ul li {
-    margin: 10px;
+    margin: 5px;
   }
   .head ul li a {
     font-size: .3em;
@@ -381,19 +381,95 @@ form textarea {
     margin-bottom: 0px;
     font-size: 1.2em;
     width: 200px;
-    height: 40px;
-    color: white;
-    border: 0 30px 30px 0;
-    position: relative;
+    height: 30px;
+    line-height: 30px;
   }
   .contenedor::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -40px; /* Ajusta la posición de la punta */
-    margin-top: -20px; /* Ajusta la posición vertical de la punta */
-    border-width: 20px; /* Ajusta el tamaño de la punta */
-    border-style: solid;
-    border-color: transparent transparent transparent #22beeb; /* Ajusta el color de la punta */
+    right: -30px; /* Ajusta la posición de la punta */
+    margin-top: -15px; /* Ajusta la posición vertical de la punta */
+    border-width: 15px; /* Ajusta el tamaño de la punta */
   }
+  /* Seccion Dos */
+.seccion-dos-titulo img {
+  width: 60px;
+}
+.seccion-dos-titulo h2 {
+  font-size: 1.5em;
+}
+.seccion-dos p {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+.seccion-dos-content {
+
+  margin-bottom: 40px;
+}
+.iconos {
+  flex-direction: column;
+}
+.iconos span a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  font-size: 1.1em;
+}
+/* Seccion cuatro */
+.seccion-cuatro-texto {
+  margin-left:10px;
+}
+.seccion-cuatro-pasos {
+  font-size: 1em;
+}
+.seccion-cuatro .imagen-boton img {
+  width: 100px;
+  margin-right: 0px;
+  margin-top: 20px;
+  float: left;
+}
+/* Contacto */
+.contacto {
+  margin-top: 150px;
+}
+.contacto-total {
+  flex-direction: column;
+}
+.contacto-texto {
+  width: 100%;
+}
+.contacto-texto .elementos i {
+  font-size: 2em;
+}
+.formulario {
+  width: 90%;
+}
+/* Footer */
+.footer {
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer-col-uno {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-col-uno .redes {
+  margin-bottom: 20px;
+}
+.footer .footer-col-uno p {
+  font-size: 0.6em;
+  text-align: center;
+}
+.footer .footer-col-uno img {
+  width: 150px;
+}
+.footer-col-dos {
+  width: 90%;
+  margin: 20px 0;
+  font-size: .8em;
+}
+.footer-col-tres {
+  width: 90%;
+  margin: 20px 0;
+}
 }
