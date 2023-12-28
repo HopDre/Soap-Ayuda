@@ -207,7 +207,7 @@
 .seccion-cuatro-pasos {
   font-size: 2em;
 }
-.seccion-cuatro .imagen-boton img {
+/* .seccion-cuatro .imagen-boton img {
   width: 200px;
   float: right;
   margin-right: 80px;
@@ -215,7 +215,7 @@
 }
 .seccion-cuatro .imagen-boton img:hover {
   scale: 105%;
-}
+} */
 /* Contacto */
 .contacto {
   margin-top: 200px;
@@ -420,12 +420,12 @@ form textarea {
 .seccion-cuatro-pasos {
   font-size: 1em;
 }
-.seccion-cuatro .imagen-boton img {
+/* .seccion-cuatro .imagen-boton img {
   width: 100px;
   margin-right: 0px;
   margin-top: 20px;
   float: left;
-}
+} */
 /* Contacto */
 .contacto {
   margin-top: 150px;
