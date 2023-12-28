@@ -141,7 +141,7 @@
   flex-direction: column;
   align-items: center;
 }
-.iconos span a {
+.iconos span .link-compra {
   margin-top: 40px;
   background-color: #1e5db2;
   width: 100%;
