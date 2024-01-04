@@ -407,10 +407,10 @@ form textarea {
     margin: 5px;
   }
   .head ul li a {
-    font-size: 0.3em;
+    font-size: 0.5em;
   }
   .head ul li a:hover {
-    font-size: 0.33em;
+    font-size: 0.55em;
   }
   .texto-uno{
     margin: 0;
@@ -439,7 +439,7 @@ form textarea {
     width: 200px;
     height: 30px;
     line-height: 30px;
-    margin-bottom: 150px;
+    margin-bottom: 300px;
   }
   .contenedor::before {
     right: -29px; /* Ajusta la posición de la punta */
@@ -484,7 +484,7 @@ form textarea {
 } */
   /* Contacto */
   .contacto {
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .contacto .seccion-dos-titulo {
     display: flex;
@@ -494,7 +494,7 @@ form textarea {
     margin-bottom: 0;
   }
   .contacto h2{
-    margin-bottom: 150px;
+    margin-bottom: 50px;
   }
   .contacto-total {
     flex-direction: column;
