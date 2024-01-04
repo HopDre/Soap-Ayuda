@@ -453,6 +453,7 @@ form textarea {
     margin: auto;
     margin-bottom: 300px;
     padding: 5px;
+    text-align: center;
   }
   .contenedor::before {
     right: -39px; /* Ajusta la posición de la punta */
