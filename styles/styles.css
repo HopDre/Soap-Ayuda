@@ -52,9 +52,9 @@
   border: 9px solid yellow;
   color: #1e5db2;
   border-radius: 50%;
-  width: 350px;
-  padding: 70px;
-  margin-left: 80px;
+  width: 300px;
+  padding: 20px;
+  margin-left: 10px;
   font-weight: 800;
   font-size: 1.7em;
   text-align: center;
@@ -63,7 +63,8 @@
   font-weight: 700;
   font-size: 2em;
   color: #1e5db2;
-  margin-left: 10px;
+  width: 320px;
+  background-color: rgba(000, 000, 000, .7);
 }
 .text-dos .contenedor {
   font-weight: 700;
@@ -263,6 +264,9 @@
   scale: 105%;
 } */
 /* Contacto */
+.contacto .seccion-dos-titulo img{
+  margin-bottom: 200px;
+}
 .contacto {
   margin-top: 200px;
   margin-bottom: 40px;
@@ -341,6 +345,7 @@ form textarea {
 .footer .footer-col-uno p {
   font-size: 0.8em;
   margin-bottom: 10px;
+  text-align: center;
 }
 .footer .footer-col-uno .redes a {
   color: #1e5db2;
@@ -363,8 +368,6 @@ form textarea {
 }
 .footer .footer-col-uno img {
   width: 200px;
-  filter: brightness(1.1);
-  mix-blend-mode: multiply;
   margin-bottom: 30px;
 }
 .footer-col-dos {
@@ -396,7 +399,6 @@ form textarea {
   text-align: center;
   margin-top: 50px;
 }
-
 @media (max-width: 950px) {
   .head ul {
     margin-right: 0;
@@ -478,6 +480,16 @@ form textarea {
   /* Contacto */
   .contacto {
     margin-top: 150px;
+  }
+  .contacto .seccion-dos-titulo {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto .seccion-dos-titulo img{
+    margin-bottom: 0;
+  }
+  .contacto h2{
+    margin-bottom: 150px;
   }
   .contacto-total {
     flex-direction: column;

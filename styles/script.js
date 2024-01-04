@@ -16,6 +16,14 @@ const sliderWrapper = document.getElementById('slider-wrapper');
     const translateValue = -currentIndex * 100;
     sliderWrapper.style.transform = `translateX(${translateValue}vw)`;
   }
-
-  
   setInterval(nextSlide, 5000);
+
+          
+   // Inicializar ScrollReveal
+   ScrollReveal().reveal('.scroll-reveal-section', {
+    delay: 250,
+    distance: '50px',
+    easing: 'ease-in-out',
+    origin: 'bottom',
+    reset: true
+});
