@@ -519,7 +519,7 @@ form textarea {
     content: "";
     position: absolute;
     top: 50%;
-    right: -30px; /* Ajusta la posición de la punta */
+    right: -29px; /* Ajusta la posición de la punta */
     margin-top: -15px; /* Ajusta la posición vertical de la punta */
     border-width: 15px; /* Ajusta el tamaño de la punta */
     border-style: solid;
