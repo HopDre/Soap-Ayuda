@@ -423,7 +423,11 @@ form textarea {
     height: 100vh;
     background-position: center;
   }
+  .head{
+
+  }
   .head ul {
+    justify-content: space-around;
     margin-right: 0;
     width: 100%;
   }
