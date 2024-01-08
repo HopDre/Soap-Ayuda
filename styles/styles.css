@@ -27,7 +27,7 @@
 }
 .head ul {
   display: flex;
-  margin-right: 10px;
+  margin-left: 100px;
   list-style-type: none;
 }
 .head ul li {
@@ -92,7 +92,7 @@
 /* Seccion Dos */
 .eslogan{
   font-family: serif;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .soap {
   color: #1e5db2;
@@ -139,7 +139,7 @@
   display: flex;
   justify-content: space-around;
 }
-.iconos .icon img {
+.iconos .icon .logo-dos {
   width: 200px;
   border: 5px solid #22beeb;
 }
@@ -148,10 +148,9 @@
   flex-direction: column;
   align-items: center;
 }
-.iconos span .link-compra {
-  margin-top: 40px;
-  background-color: #1e5db2;
-  width: 100%;
+.iconos span .link-compra-uno{
+  background: linear-gradient(#22beeb,#1e5db2);
+  width: 80%;
   color: rgb(255, 255, 255);
   text-align: center;
   border-radius: 20px;
@@ -159,6 +158,37 @@
   line-height: 40px;
   font-size: 1.3em;
   transition: 1s;
+}
+.iconos span .link-compra {
+  background-color: #1e5db2;
+  width: 80%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.3em;
+  transition: 1s;
+}
+.iconos .conjunto{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.iconos .conjunto-dos{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.iconos .conjunto img{
+  width: 30px;
+}
+.iconos .conjunto-dos img{
+  width: 30px;
 }
 .iconos span a:hover {
   scale: 105%;
@@ -274,11 +304,18 @@ hr{
 } */
 /* Contacto */
 .contacto .seccion-dos-titulo{
-  display: flex;
   margin-bottom: 100px;
+  background: linear-gradient(#1e5db2,#22beeb);
+  padding: 20px;
+}
+.contacto .seccion-dos-titulo .fondo-blanco{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
 }
 .contacto .seccion-dos-titulo img{
   margin: 0;
+  margin-right: 20px;
 }
 .contacto {
   margin-top: 200px;
@@ -423,12 +460,11 @@ form textarea {
     height: 100vh;
     background-position: center;
   }
-  .head{
-
-  }
   .head ul {
     justify-content: space-around;
     margin-right: 0;
+    margin-left: 0;
+    padding: 20px 0;
     width: 100%;
   }
   .head ul li {
@@ -447,46 +483,47 @@ form textarea {
     margin: 0;
   }
   .texto-uno h2 {
-    background-color: rgba(255, 255, 255, .6);
+    border: 9px solid yellow;
+    border-radius: 50%;
+    width: 80%;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 1.5em;
     text-align: center;
-    border: none;
-    border-radius: 0;
-    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .text-dos h3 {
     font-weight: 700;
     font-size: 1.5em;
     color: #1e5db2;
-    margin: auto;
-    margin-bottom: 50px;
-    padding: 20px 0;
-    border-radius: 50%;
-  }
-  .text-dos h3 {
-    margin-bottom: 0;
-    font-weight: 700;
-    font-size: 1.2em;
-    margin-left: 0;
-    width: 200px;
-    padding: 5px 5px;
-    margin: auto;
-    background-color: yellow;
-    text-align: center;
+    width: 250px;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 0;
+    text-align: left;
   }
   .text-dos .contenedor {
-    font-weight: 600;
-    margin-bottom: 0px;
-    font-size: 1.2em;
-    width: 200px;
+    font-weight: 700;
+    background-color: #22beeb;
+    font-size: 1.5em;
+    text-align: left;
+    width: 270px;
     height: 30px;
-    line-height: 30px;
-    margin: auto;
-    margin-bottom: 300px;
-    padding: 5px;
-    text-align: center;
+    color: white;
+    border: 0 30px 30px 0;
+    position: relative;
+    margin: 0;
+    margin-bottom: 250px;
   }
   .contenedor::before {
-    right: -39px; /* Ajusta la posición de la punta */
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -40px; /* Ajusta la posición de la punta */
     margin-top: -20px; /* Ajusta la posición vertical de la punta */
     border-width: 20px; /* Ajusta el tamaño de la punta */
+    border-style: solid;
+    border-color: transparent transparent transparent #22beeb; /* Ajusta el color de la punta */
   }
   /* Seccion Dos */
   .seccion-dos-titulo img {
@@ -600,5 +637,8 @@ hr{
   }
   .lista-precios .right{
     width: 90%;
+  }
+  .iconos .conjunto, .iconos .conjunto-dos{
+    justify-content: flex-start;
   }
 }
