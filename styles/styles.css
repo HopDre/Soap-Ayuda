@@ -576,15 +576,15 @@ hr{
   .contacto {
     margin-top: 100px;
   }
-  .contacto .seccion-dos-titulo {
+  .contacto .seccion-dos-titulo .fondo-blanco{
     display: flex;
-    flex-direction: column;
+    align-items: center;
   }
   .contacto .seccion-dos-titulo img{
     margin-bottom: 0;
   }
   .contacto h2{
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   .contacto-total {
     flex-direction: column;
