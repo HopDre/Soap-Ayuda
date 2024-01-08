@@ -22,7 +22,7 @@
   width: 100%;
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .head ul {
@@ -42,6 +42,7 @@
 .head ul li a:hover {
   font-size: 1.35em;
   color: #22beeb;
+  text-decoration: underline;
 }
 .texto-uno {
   position: absolute;
@@ -64,7 +65,7 @@
   font-size: 2em;
   color: #1e5db2;
   width: 320px;
-  background-color: rgba(000, 000, 000, .7);
+  background-color: rgba(255, 255, 255, .5);
 }
 .text-dos .contenedor {
   font-weight: 700;
@@ -89,6 +90,10 @@
 }
 
 /* Seccion Dos */
+.eslogan{
+  font-family: serif;
+  font-size: 1.5em;
+}
 .soap {
   color: #1e5db2;
   font-weight: bold;
@@ -254,6 +259,10 @@
 .seccion-cuatro-pasos {
   font-size: 2em;
 }
+hr{
+  margin: 200px 0;
+  border: 5px solid #22beeb;
+}
 /* .seccion-cuatro .imagen-boton img {
   width: 200px;
   float: right;
@@ -264,8 +273,12 @@
   scale: 105%;
 } */
 /* Contacto */
+.contacto .seccion-dos-titulo{
+  display: flex;
+  margin-bottom: 100px;
+}
 .contacto .seccion-dos-titulo img{
-  margin-bottom: 200px;
+  margin: 0;
 }
 .contacto {
   margin-top: 200px;
@@ -399,37 +412,48 @@ form textarea {
   text-align: center;
   margin-top: 50px;
 }
+
+
+
+
+
+
 @media (max-width: 950px) {
   .header {
     height: 100vh;
+    background-position: center;
   }
   .head ul {
     margin-right: 0;
+    width: 100%;
   }
   .head ul li {
     margin: 3px;
   }
   .head ul li a {
-    font-size: 0.58em;
+    font-size: .75em;
   }
   .head ul li a:hover {
-    font-size: 0.6em;
+    font-size: 0.8em;
+  }
+  .head img{
+    display: none;
   }
   .texto-uno{
     margin: 0;
   }
   .texto-uno h2 {
+    background-color: rgba(255, 255, 255, .6);
     text-align: center;
     border: none;
     border-radius: 0;
-    width: 90%;
-    padding: 0;
+    width: 100%;
     font-weight: 700;
     font-size: 1.5em;
     color: #1e5db2;
     margin: auto;
     margin-bottom: 50px;
-    padding: 10px 0;
+    padding: 20px 0;
     border-radius: 50%;
   }
   .text-dos h3 {
@@ -483,6 +507,14 @@ form textarea {
     width: 200px;
     font-size: 1.1em;
   }
+  .seccion-tres-uno .seccion-dos-titulo{
+    margin: 0;
+    margin-top: 10px;
+  }
+  .seccion-tres-uno #slider.container{
+    margin-top: -50;
+    padding: 0;
+  }
   /* Seccion cuatro */
   .seccion-cuatro-texto {
     margin-left: 10px;
@@ -496,6 +528,9 @@ form textarea {
   margin-top: 20px;
   float: left;
 } */
+hr{
+  margin: 80px 0;
+}
   /* Contacto */
   .contacto {
     margin-top: 100px;
