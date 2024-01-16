@@ -138,6 +138,7 @@
 .iconos {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 .iconos .icon .logo-dos {
   width: 200px;
@@ -193,28 +194,7 @@
 .iconos span a:hover {
   scale: 105%;
 }
-.lista-precios{
-  display: flex;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  justify-content: space-around;
-}
-.lista-precios .left{
-  width: 40%;
-}
-.lista-precios article{
-  display: flex;
-  justify-content: space-between;
-}
-.lista-precios .right{
-  width: 40%;
-}
-.lista-precios article:nth-child(odd){
-  color: #1e5db2;
-}
-.lista-precios article:nth-child(even){
-  color: #22beeb;
-}
+
 /* Seccion Tres */
 .seccion-tres {
   display: flex;
@@ -592,7 +572,7 @@ form textarea {
     margin-bottom: 20px;
     width: 200px;
     font-size: 1.1em;
-  }
+  } 
   .seccion-tres-uno .seccion-dos-titulo{
     margin: 0;
     margin-top: 10px;
@@ -684,7 +664,7 @@ hr{
     width: 90%;
   }
   .iconos .conjunto, .iconos .conjunto-dos{
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .carousel-dots {
     position: relative;

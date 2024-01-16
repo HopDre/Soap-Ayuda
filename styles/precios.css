@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    min-height: 100dvh;
+    margin: auto;
+}
+.foto{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-prices{
+    margin-top: 40px;
+}
+.container-prices .titulo h3{
+text-align: center;
+color: #1e5db2;
+}
+.lista-precios{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+  }
+  .lista-precios .left{
+    width: 40%;
+  }
+  .lista-precios article{
+    display: flex;
+    justify-content: space-between;
+  }
+  .lista-precios .right{
+    width: 40%;
+  }
+  .lista-precios article:nth-child(odd){
+    color: #1e5db2;
+  }
+  .lista-precios article:nth-child(even){
+    color: #22beeb;
+  }
+
+
+  /* Footer */
+.footer {
+    background-color: #595a5a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer .footer-col-uno {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .footer .footer-col-uno .redes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .footer .footer-col-uno p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .footer .footer-col-uno .redes a {
+    color: #1e5db2;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.8em;
+    line-height: 40px;
+    transition: 1s;
+  }
+  .footer .footer-col-uno .redes .insta:hover {
+    background-color: purple;
+    color: white;
+  }
+  .footer .footer-col-uno .redes .face:hover {
+    background-color: #1e5db2;
+    color: white;
+  }
+  .footer .footer-col-uno img {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+  .footer-col-dos {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+  }
+  .footer-col-tres {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+  }
+  .footer-col-tres .datos {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-col-tres .datos span {
+    margin-bottom: 20px;
+  }
+
+
+  @media (max-width: 950px){
+    /* Footer */
+  .footer {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-col-uno {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-col-uno .redes {
+    margin-bottom: 20px;
+  }
+  .footer .footer-col-uno p {
+    font-size: 0.6em;
+    text-align: center;
+  }
+  .footer .footer-col-uno img {
+    width: 150px;
+  }
+  .footer-col-dos {
+    width: 90%;
+    margin: 20px 0;
+    font-size: 0.8em;
+  }
+  .footer-col-tres {
+    width: 90%;
+    margin: 20px 0;
+  }
+  .lista-precios{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .lista-precios .left{
+    width: 100%;
+  }
+  .lista-precios .right{
+    width: 100%;
+  }
+  }
