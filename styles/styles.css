@@ -482,7 +482,7 @@ form textarea {
 
 @media (max-width: 950px) {
   .header {
-    height: 100vh;
+    height: 500px;
     background-position: center;
   }
   .head ul {
@@ -517,6 +517,8 @@ form textarea {
     text-align: center;
     margin: auto;
     margin-bottom: 40px;
+    position: relative;
+    background-color: rgba(255, 255, 255, .5);
   }
   .text-dos h3 {
     font-weight: 700;
@@ -538,7 +540,7 @@ form textarea {
     border: 0 30px 30px 0;
     position: relative;
     margin: 0;
-    margin-bottom: 250px;
+    margin-bottom: 350px;
   }
   .contenedor::before {
     content: "";
@@ -664,7 +666,7 @@ hr{
     width: 90%;
   }
   .iconos .conjunto, .iconos .conjunto-dos{
-    justify-content: space-between;
+    justify-content: center;
   }
   .carousel-dots {
     position: relative;
