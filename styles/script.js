@@ -53,9 +53,9 @@ showSlides(currentSlideIndex);
           
    // Inicializar ScrollReveal
    ScrollReveal().reveal('.scroll-reveal-section', {
-    delay: 250,
+    delay: 50,
     distance: '50px',
     easing: 'ease-in-out',
     origin: 'bottom',
-    reset: true
+    reset: false
 });

@@ -43,7 +43,64 @@ color: #1e5db2;
   .lista-precios article:nth-child(even){
     color: #22beeb;
   }
-
+  .contenedor-btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 40px;
+  }
+  .contenedor-btn .link-compra-uno{
+    background-color: #1e5db2;
+    width: 60%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3em;
+    transition: 1s;
+    text-decoration: none;
+  }
+  .link-compra-uno:hover{
+    scale: 105%;
+  }
+  .contenedor-btn .link-compra-dos{
+    background: linear-gradient(#22beeb,#1e5db2);
+    width: 60%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3em;
+    transition: 1s;
+    text-decoration: none;
+  }
+  .link-compra-dos:hover{
+    scale: 105%;
+  }
+.contenedor-btn-inicio{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  background-color: #1e5db2;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+.btn-inicio{
+  width: 80px;
+  margin: 10px 0 0 10px;
+  transition: 1s;
+}
+.btn-inicio a{
+  text-decoration: none;
+}
+.btn-inicio:hover{
+  scale: 105%;
+}
 
   /* Footer */
 .footer {
