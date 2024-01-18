@@ -59,3 +59,30 @@ showSlides(currentSlideIndex);
     origin: 'bottom',
     reset: false
 });
+
+
+function showPopup(texto, subtexto, imagen) {
+  document.getElementById('popupText').innerHTML = `<strong>${texto}</strong><br>${subtexto}`;
+  document.getElementById('popupImage').src = imagen;
+
+  document.getElementById('overlay').style.display = 'flex';
+
+  setTimeout(function () {
+      document.getElementById('overlay').style.display = 'none';
+      // Cambia la siguiente línea para redirigir a la página que desees después de 2 segundos
+      window.location.href = '/Views/preciosmutual.html';
+  }, 2000);
+}
+
+function showPopupDos(texto, subtexto, imagen) {
+  document.getElementById('popupText').innerHTML = `<strong>${texto}</strong><br>${subtexto}`;
+  document.getElementById('popupImage').src = imagen;
+
+  document.getElementById('overlay').style.display = 'flex';
+
+  setTimeout(function () {
+      document.getElementById('overlay').style.display = 'none';
+      // Cambia la siguiente línea para redirigir a la página que desees después de 2 segundos
+      window.location.href = '/Views/preciosbci.html';
+  }, 2000);
+}

@@ -11,6 +11,15 @@
 </head>
 
 <body>
+
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <img id="popupImage" src="" alt="Imagen">
+            <p id="popupText"></p>
+        </div>
+    </div>
+
+    
     <section class="header">
         <div class="head">
             <img src="/assets/img-index/8dad6d13-a567-47d2-bf2f-8e5550775abd.jpg" alt="">
@@ -64,59 +73,59 @@
                 está presente con convenios en diferentes Instituciones y/o Fundaciones
                 de <span class="ayuda">ámbito social.</span>
             </p>
-            
-            </div>
-            <div class="iconos">
-                <span class="icon"><img src="/assets/img-index/Cruz_roja_Chilena_Logo.jpg" alt="" class="logo-dos">
-                    <div class="conjunto">
-                        <img src="/assets/img-index/logo_2019.png" alt="">
-                        <a href="/Views/preciosmutual.html" class="link-compra-uno">Compra
-                            aquí</a>
-                    </div>
-                    <div class="conjunto-dos">
-                        <img src="/assets/img-index/bci-banco-credito-logo-7E16EF43B3-seeklogo.com.png" alt="">
-                        <a href="/Views/preciosbci.html" class="link-compra">Compra
-                            aquí</a>
-                    </div>
-                </span>
-                <span class="icon"><img src="/assets/img-index/Logo_Dhermes.webp" alt="" class="logo-dos">
-                    <div class="conjunto">
-                        <img src="/assets/img-index/logo_2019.png" alt="">
-                        <a href="/Views/preciosmutual.html" class="link-compra-uno">Compra
-                            aquí</a>
-                    </div>
-                    <div class="conjunto-dos">
-                        <img src="/assets/img-index/bci-banco-credito-logo-7E16EF43B3-seeklogo.com.png" alt="">
-                        <a href="/Views/preciosbci.html" class="link-compra">Compra
-                            aquí</a>
-                    </div>
-                </span>
-                <span class="icon"><img src="/assets/img-index/398616221_642102724763970_6512310732122997937_n.jpg"
-                        alt="" class="logo-dos">
-                    <div class="conjunto">
-                        <img src="/assets/img-index/logo_2019.png" alt="">
-                        <a href="/Views/preciosmutual.html" class="link-compra-uno">Compra
-                            aquí</a>
-                    </div>
-                    <div class="conjunto-dos">
-                        <img src="/assets/img-index/bci-banco-credito-logo-7E16EF43B3-seeklogo.com.png" alt="">
-                        <a href="/Views/preciosbci.html" class="link-compra">Compra
-                            aquí</a>
-                    </div>
-                </span>
-                <span class="icon"><img src="/assets/img-index/2023-11-12.jpg" alt="" class="logo-dos">
-                    <div class="conjunto">
-                        <img src="/assets/img-index/logo_2019.png" alt="">
-                        <a href="/Views/preciosmutual.html" class="link-compra-uno">Compra
-                            aquí</a>
-                    </div>
-                    <div class="conjunto-dos">
-                        <img src="/assets/img-index/bci-banco-credito-logo-7E16EF43B3-seeklogo.com.png" alt="">
-                        <a href="/Views/preciosbci.html" class="link-compra">Compra
-                            aquí</a>
-                    </div>
-                </span>
-            </div>
+
+        </div>
+        <div class="iconos">
+            <span class="icon"><img src="/assets/img-index/Cruz_roja_Chilena_Logo.jpg" alt="" class="logo-dos">
+                <div class="conjunto">
+                    <img src="/assets/img-index/logo_2019.png" alt="">
+                    <a href="#" class="link-compra-uno" onclick="showPopup('Gracias por su donación','', '/assets/img-index/Cruz_roja_Chilena_Logo.jpg')">Compra
+                        aquí</a>
+                </div>
+                <div class="conjunto-dos">
+                    <img src="/assets/img-index/bci-banco-credito-logo-7E16EF43B3-seeklogo.com.png" alt="">
+                    <a href="#" onclick="showPopupDos('Gracias por su donación','', '/assets/img-index/Cruz_roja_Chilena_Logo.jpg')" class="link-compra">Compra
+                        aquí</a>
+                </div>
+            </span>
+            <span class="icon"><img src="/assets/img-index/Logo_Dhermes.webp" alt="" class="logo-dos">
+                <div class="conjunto">
+                    <img src="/assets/img-index/logo_2019.png" alt="">
+                    <a href="#" class="link-compra-uno" onclick="showPopup('Gracias por su donación','', '/assets/img-index/Logo_Dhermes.webp')">Compra
+                        aquí</a>
+                </div>
+                <div class="conjunto-dos">
+                    <img src="/assets/img-index/bci-banco-credito-logo-7E16EF43B3-seeklogo.com.png" alt="">
+                    <a href="#" onclick="showPopupDos('Gracias por su donación','', '/assets/img-index/Logo_Dhermes.webp')" class="link-compra">Compra
+                        aquí</a>
+                </div>
+            </span>
+            <span class="icon"><img src="/assets/img-index/398616221_642102724763970_6512310732122997937_n.jpg" alt=""
+                    class="logo-dos">
+                <div class="conjunto">
+                    <img src="/assets/img-index/logo_2019.png" alt="">
+                    <a href="#" class="link-compra-uno" onclick="showPopup('Gracias por su donación','', '/assets/img-index/398616221_642102724763970_6512310732122997937_n.jpg')">Compra
+                        aquí</a>
+                </div>
+                <div class="conjunto-dos">
+                    <img src="/assets/img-index/bci-banco-credito-logo-7E16EF43B3-seeklogo.com.png" alt="">
+                    <a href="#" onclick="showPopupDos('Gracias por su donación','', '/assets/img-index/398616221_642102724763970_6512310732122997937_n.jpg')" class="link-compra">Compra
+                        aquí</a>
+                </div>
+            </span>
+            <span class="icon"><img src="/assets/img-index/2023-11-12.jpg" alt="" class="logo-dos">
+                <div class="conjunto">
+                    <img src="/assets/img-index/logo_2019.png" alt="">
+                    <a href="#" class="link-compra-uno" onclick="showPopup('Gracias por su donación','', '/assets/img-index/2023-11-12.jpg')">Compra
+                        aquí</a>
+                </div>
+                <div class="conjunto-dos">
+                    <img src="/assets/img-index/bci-banco-credito-logo-7E16EF43B3-seeklogo.com.png" alt="">
+                    <a href="#" onclick="showPopupDos('Gracias por su donación','', '/assets/img-index/2023-11-12.jpg')" class="link-compra">Compra
+                        aquí</a>
+                </div>
+            </span>
+        </div>
         </div>
     </section>
     <!-- Seccion tres -->
