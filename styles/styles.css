@@ -476,35 +476,6 @@ form textarea {
 
 
 
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.popup {
-  background: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-#popupText strong {
-  color: #1e5db2;
-  font-size: 2em;
-}
-
-.popup img {
-  width: 200px;
-  height: auto;
-}
-
 
 
 

@@ -61,28 +61,66 @@ showSlides(currentSlideIndex);
 });
 
 
-function showPopup(texto, subtexto, imagen) {
-  document.getElementById('popupText').innerHTML = `<strong>${texto}</strong><br>${subtexto}`;
-  document.getElementById('popupImage').src = imagen;
 
-  document.getElementById('overlay').style.display = 'flex';
+function cambiarContenido(opcion) {
+  // Define el contenido de la imagen y el texto según la opción seleccionada
+  var imagenSrc, texto;
 
-  setTimeout(function () {
-      document.getElementById('overlay').style.display = 'none';
-      // Cambia la siguiente línea para redirigir a la página que desees después de 2 segundos
-      window.location.href = '/Views/preciosmutual.html';
-  }, 2000);
+  switch (opcion) {
+      case 1:
+          imagenSrc = "/assets/img-index/Cruz_roja_Chilena_Logo.jpg";
+          texto = "Gracias por su donación";
+          break;
+      case 2:
+          imagenSrc = "/assets/img-index/Logo_Dhermes.webp";
+          texto = "Gracias por su donación";
+          break;
+      case 3:
+          imagenSrc = "/assets/img-index/398616221_642102724763970_6512310732122997937_n.jpg";
+          texto = "Gracias por su donación";
+          break;
+      case 4:
+          imagenSrc = "/assets/img-index/2023-11-12.jpg";
+          texto = "Gracias por su donación";
+          break;
+      // Agrega más casos según sea necesario
+      default:
+          imagenSrc = "default.jpg";
+          texto = "Texto predeterminado.";
+  }
+
+  // Almacena la información en el almacenamiento local para que se pueda acceder desde la página de donación
+  localStorage.setItem("imagenSrc", imagenSrc);
+  localStorage.setItem("texto", texto);
 }
 
-function showPopupDos(texto, subtexto, imagen) {
-  document.getElementById('popupText').innerHTML = `<strong>${texto}</strong><br>${subtexto}`;
-  document.getElementById('popupImage').src = imagen;
 
-  document.getElementById('overlay').style.display = 'flex';
 
-  setTimeout(function () {
-      document.getElementById('overlay').style.display = 'none';
-      // Cambia la siguiente línea para redirigir a la página que desees después de 2 segundos
-      window.location.href = '/Views/preciosbci.html';
-  }, 2000);
-}
+
+
+
+// function showPopup(texto, subtexto, imagen) {
+//   document.getElementById('popupText').innerHTML = `<strong>${texto}</strong><br>${subtexto}`;
+//   document.getElementById('popupImage').src = imagen;
+
+//   document.getElementById('overlay').style.display = 'flex';
+
+//   setTimeout(function () {
+//       document.getElementById('overlay').style.display = 'none';
+//       // Cambia la siguiente línea para redirigir a la página que desees después de 2 segundos
+//       window.location.href = '/Views/preciosmutual.html';
+//   }, 2000);
+// }
+
+// function showPopupDos(texto, subtexto, imagen) {
+//   document.getElementById('popupText').innerHTML = `<strong>${texto}</strong><br>${subtexto}`;
+//   document.getElementById('popupImage').src = imagen;
+
+//   document.getElementById('overlay').style.display = 'flex';
+
+//   setTimeout(function () {
+//       document.getElementById('overlay').style.display = 'none';
+//       // Cambia la siguiente línea para redirigir a la página que desees después de 2 segundos
+//       window.location.href = '/Views/preciosbci.html';
+//   }, 2000);
+// }

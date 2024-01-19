@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+#contenido {
+    margin-top: 150px;
+}
+
+#imagenDonacion {
+    width: 200px; /* Ajusta el tamaño máximo de la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 8px; /* Añade esquinas redondeadas al borde */
+}
+
+#textoDonacion {
+    color:#1e5db2;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 10px;
+}
