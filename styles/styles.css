@@ -502,13 +502,14 @@ form textarea {
 .info-content {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
   background: #fff;
   padding: 20px;
   text-align: center;
+  width: 90%;
 }
 
 .info-image {
@@ -721,7 +722,7 @@ hr{
     justify-content: center;
   }
   .carousel-dots {
-    position: relative;
+    margin-bottom: 50px;
 
   }
   .carousel-btn {
