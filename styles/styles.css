@@ -159,7 +159,7 @@
   transition: 1s;
 }
 .iconos span .link-compra {
-  background-color: #1e5db2;
+  background-color: gray;
   width: 80%;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -299,6 +299,10 @@
 }
 
 /* Seccion cuatro */
+.seccion-cuatro{
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
 .seccion-cuatro .seccion-dos-titulo h2 {
   color: #22beeb;
 }
