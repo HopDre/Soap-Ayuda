@@ -477,6 +477,47 @@ form textarea {
   margin-top: 50px;
 }
 
+.info{
+  position: absolute;
+  margin-left: 160px;
+  margin-top: 10px;
+}
+.info i{
+  font-size: 1.8em;
+  color: #1e5db2;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+  z-index: 999; /* Asegura que la superposición esté sobre todo el contenido */
+}
+
+.info-content {
+  display: none;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-image {
+  width: 100px;
+  height: auto;
+}
+
+.info-text {
+  margin-top: 15px;
+}
 
 
 
@@ -684,5 +725,10 @@ hr{
   }
   .carousel {
     height: 40vh;
+  }
+
+
+  .info-content {
+    top: 60%;
   }
 }

@@ -95,32 +95,50 @@ function cambiarContenido(opcion) {
 }
 
 
+function mostrarContenido(id) {
+  // Configurar contenido personalizado según el ID
+  switch (id) {
+      case 1:
+        infoImage.src = "/assets/img-index/Cruz_roja_Chilena_Logo.jpg";
+        infoText.textContent = 'La Cruz Roja Chilena es una institución humanitaria y voluntaria que brinda apoyo en situaciones de emergencia y promueve la salud y el bienestar de la sociedad.';
+        break;
+      case 2:
+        infoImage.src = "/assets/img-index/Logo_Dhermes.webp";
+        infoText.textContent = 'DHERMES es un Refugio de Animales con 19 años resguardando a cientos de perritos abandonados y vulnerables que buscan hogar.';
+        break;
+      case 3:
+        infoImage.src = "/assets/img-index/398616221_642102724763970_6512310732122997937_n.jpg";
+        infoText.textContent = 'La Primera Compañía de Bomberos de Valparaiso fue fundada en 1851.Comenzó con 151 voluntarios, todos connotados porteños y en su mayoría ingleses y norteamericanos.\nEn la actualidad están conformadas por más de 50 primerinos, quienes día a día permanecen atentos al ulular de la sirena para responder si el deber llama.';
+        break;
+      case 4:
+        infoImage.src = "/assets/img-index/2023-11-12.jpg";
+        infoText.textContent = 'Fundación Apoyándote está conformada por padres con hijos en condición de Espectro Autista y fue creada con el objetivo de apoyar a las familias que no puedan costear los tratamientos que tanto cuesta pagar.';
+        break;
+      // Agrega más casos según la cantidad de elementos "info"
+  }
+
+  // Mostrar la superposición y el contenido
+  document.getElementById('overlay').style.display = 'block';
+  document.getElementById('infoContent').style.display = 'block';
+}
+
+document.addEventListener('click', function (event) {
+  var overlay = document.getElementById('overlay');
+  var infoContent = document.getElementById('infoContent');
+  
+  // Verificar si el clic no ocurrió dentro del contenedor "info" o en el ícono
+  var isInfoContainer = event.target.closest('.info');
+  var isIconContainer = event.target.closest('.icon-container');
+  
+  if (!isInfoContainer && !isIconContainer) {
+      overlay.style.display = 'none';
+      infoContent.style.display = 'none';
+  }
+});
 
 
 
 
-// function showPopup(texto, subtexto, imagen) {
-//   document.getElementById('popupText').innerHTML = `<strong>${texto}</strong><br>${subtexto}`;
-//   document.getElementById('popupImage').src = imagen;
 
-//   document.getElementById('overlay').style.display = 'flex';
 
-//   setTimeout(function () {
-//       document.getElementById('overlay').style.display = 'none';
-//       // Cambia la siguiente línea para redirigir a la página que desees después de 2 segundos
-//       window.location.href = '/Views/preciosmutual.html';
-//   }, 2000);
-// }
 
-// function showPopupDos(texto, subtexto, imagen) {
-//   document.getElementById('popupText').innerHTML = `<strong>${texto}</strong><br>${subtexto}`;
-//   document.getElementById('popupImage').src = imagen;
-
-//   document.getElementById('overlay').style.display = 'flex';
-
-//   setTimeout(function () {
-//       document.getElementById('overlay').style.display = 'none';
-//       // Cambia la siguiente línea para redirigir a la página que desees después de 2 segundos
-//       window.location.href = '/Views/preciosbci.html';
-//   }, 2000);
-// }
