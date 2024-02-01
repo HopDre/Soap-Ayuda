@@ -112,10 +112,13 @@ function mostrarContenido(id) {
         break;
       case 4:
         infoImage.src = "/assets/img-index/2023-11-12.jpg";
-        infoText.textContent = 'Fundación Apoyándote está conformada por padres con hijos en condición de Espectro Autista y fue creada con el objetivo de apoyar a las familias que no puedan costear los tratamientos que tanto cuesta pagar.';
+        infoText.textContent = 'Fundación Apoyándote</span> está conformada por padres con hijos en condición de Espectro Autista y fue creada con el objetivo de apoyar a las familias que no puedan costear los tratamientos que tanto cuesta pagar.';
         break;
       // Agrega más casos según la cantidad de elementos "info"
   }
+
+
+
 
   // Mostrar la superposición y el contenido
   document.getElementById('overlay').style.display = 'block';
@@ -135,6 +138,10 @@ document.addEventListener('click', function (event) {
       infoContent.style.display = 'none';
   }
 });
+
+
+
+
 
 
 

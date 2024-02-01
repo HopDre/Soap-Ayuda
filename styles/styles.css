@@ -485,6 +485,7 @@ form textarea {
 .info i{
   font-size: 1.8em;
   color: #1e5db2;
+  position: relative;
 }
 
 .overlay {
@@ -500,8 +501,8 @@ form textarea {
 
 .info-content {
   display: none;
-  position: fixed;
-  top: 80%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -518,7 +519,13 @@ form textarea {
 .info-text {
   margin-top: 15px;
 }
-
+.flecha{
+  margin-top: 150px;
+}
+.flecha i{
+  font-size: 2em;
+  color: #1e5db2;
+}
 
 
 
@@ -729,6 +736,9 @@ hr{
 
 
   .info-content {
-    top: 60%;
+    top: 50%;
+  }
+  .flecha{
+    display: none;
   }
 }
