@@ -139,13 +139,14 @@
   margin-bottom: 50px;
 }
 .iconos .icon .logo-dos {
-  width: 200px;
+  width: 250px;
   border: 5px solid #22beeb;
 }
 .iconos span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 .iconos span .link-compra-uno{
   background: linear-gradient(#22beeb,#1e5db2);
@@ -623,8 +624,8 @@ form textarea {
     flex-direction: column;
   }
   .iconos span a {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
     width: 200px;
     font-size: 1.1em;
   } 
