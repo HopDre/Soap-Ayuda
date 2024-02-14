@@ -727,11 +727,8 @@ hr{
     justify-content: center;
   }
   .carousel-dots {
-    margin-bottom: 50px;
-
-  }
-  .carousel-btn {
     display: none;
+
   }
   .seccion-tres-uno {
     margin-bottom: 0px;
@@ -739,12 +736,13 @@ hr{
   .carousel {
     height: 40vh;
   }
-
-
   .info-content {
     top: 50%;
   }
   .flecha{
     display: none;
+  }
+  .carousel-btn{
+    opacity: .6;
   }
 }
