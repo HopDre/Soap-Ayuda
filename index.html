@@ -257,15 +257,16 @@
                 </div>
             </div>
             <div class="formulario">
-                <form action="#">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="2211d83c-52ec-4484-a609-6fd57c3c47f1">
                     <label for="">Nombre</label>
-                    <input type="text" required>
+                    <input type="text" name="nombre" required>
                     <label for="">Correo electrónico</label>
-                    <input type="email" required>
+                    <input type="email" name="email" required>
                     <label for="">Teléfono</label>
-                    <input type="number" required>
+                    <input type="number" name="numero" required>
                     <label for="">Mótivo de la consulta</label>
-                    <select name="motivos" id="motivos" required>
+                    <select name="motivos" id="motivos" name="motivo" required>
                         <option value="selecciona">Selecciona un motivo</option>
                         <option value="opiniones">Opiniones</option>
                         <option value="agradecimientos">Agradecimientos</option>
@@ -273,9 +274,9 @@
                         <option value="consultas">Consultas</option>
                     </select>
                     <label for="">Asunto</label>
-                    <input type="text" required>
+                    <input type="text" name="Asunto" required>
                     <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    <textarea name="mensaje" id="" cols="30" rows="10" required></textarea>
                     <input type="submit" class="btn-envio" value="ENVIAR">
                 </form>
             </div>
@@ -305,6 +306,7 @@
         </div>
     </section>
     <script src="/styles/script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
