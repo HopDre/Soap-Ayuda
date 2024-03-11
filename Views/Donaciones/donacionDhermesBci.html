@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donación</title>
+    <link rel="stylesheet" href="/styles/stylesDonacion.css">
+</head>
+
+<body>
+    <div id="contenido">
+        <img id="imagenDonacion" src="" alt="Imagen de donación">
+        <p id="textoDonacion"></p>
+    </div>
+
+    <script>
+        // Recupera la información almacenada en el almacenamiento local
+        var imagenSrc = localStorage.getItem("imagenSrc");
+        var texto = localStorage.getItem("texto");
+
+        // Actualiza el contenido de la página de donación
+        document.getElementById("imagenDonacion").src = imagenSrc;
+        document.getElementById("textoDonacion").innerText = texto;
+
+        // Limpia el almacenamiento local para evitar conflictos en futuras visitas
+        localStorage.removeItem("imagenSrc");
+        localStorage.removeItem("texto");
+
+        // Redirige automáticamente después de 2 segundos
+        setTimeout(function () {
+            window.location.href = "preciosDhermesBci.html";
+        }, 3000);
+    </script>
+</body>
+
+</html>
